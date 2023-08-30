@@ -3,6 +3,7 @@
 body{
     font-family: 'Inter', sans-serif;
     font-family: 'Quicksand', sans-serif;
+    background-color: #0F0;
 }
 
 li a{
@@ -22,13 +23,14 @@ nav{
     margin-top: 64px;
 }
 
-ul{
+.nav-list{
     display: flex;
 }
 
-ul li{
+.nav-list li{
     letter-spacing: 1px;
     margin: 24px;
+    font-weight: 400;
 }
 
 .mobile-menu{
@@ -36,7 +38,7 @@ ul li{
     cursor: pointer;
 }
 
-.mobile-menu div{
+.mobile-menu .line1, .line2, .line3{
     width: 36px;
     height: 3px;
     background: #00001A;
@@ -54,19 +56,29 @@ ul li{
   }
 
 @media (max-width: 999px) {
-    ul{
+    body{
+        overflow-x: hidden;
+    }
+    
+    .nav-list{
         position: absolute;
         right: 0;
         top: 0;
         width: 80vw;
         height: 100vh;
-        background: #000;
+        background: #FFF;
         flex-direction: column;
         align-items: left;
         padding-top: 100px; 
+        transform: translateX(100%);
+        font-weight: 400;
     }
 
-    li{
-      margin-bottom:;  
+    .mobile-menu{
+        display: block;
     }
+}
+
+.nav-list.active{
+    transform: translateX(0);
 }
