@@ -7,7 +7,7 @@ class MobileNavBar {
     }
 
     addClickEvent() {
-        this.mobileMenu.addEventListener("click", () => console.log("Hey, I just met you"));
+        this.mobileMenu.addEventListener("click", () => console.log("CHUPA DEU CERTO MOR"));
     }
 
     init() {
