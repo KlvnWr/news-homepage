@@ -4,10 +4,17 @@ class MobileNavBar {
         this.navList = document.querySelector(navList);
         this.navLinks = document.querySelectorAll(navLinks);
         this.activeClass = "active";
+        
+        this.handleClick = this.handleClick.bind(this)
+    }
+
+    handleClick (){
+        this.navList.classList.toggle(this.activeClass);
+        this.animateLinks();
     }
 
     addClickEvent() {
-        this.mobileMenu.addEventListener("click", () => console.log("CHUPA DEU CERTO MOR"));
+        this.mobileMenu.addEventListener("click", this.handleClick);
     }
 
     init() {
