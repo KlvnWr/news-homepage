@@ -100,10 +100,5 @@ nav{
 
 .mobile-menu .line3 {
     transform: translate(20%, 80%) rotate(-45deg);
-<<<<<<< HEAD
     transform-origin: bottom left;
 }
-=======
-    transform-origin: bottom-left;
-}
->>>>>>> e28779e014af264f441bc6ec2fed63dde346ee36
