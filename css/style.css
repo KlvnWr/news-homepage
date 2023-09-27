@@ -69,12 +69,12 @@ nav{
         position: absolute;
         right: 0;
         top: 0;
-        width: 65vw;
+        width: 60vw;
         height: 100vh;
         background: #FFF;
         flex-direction: column;
         padding-top: 100px; 
-        transform: translateX(100%);
+        transform: translateX(200%);
         font-weight: 400;
         transition: transform 0.5s ease-in-out;
     }
@@ -91,7 +91,7 @@ nav{
 
 .mobile-menu .line1{
     transform: translate(20%, -80%) rotate(45deg);
-    transform-origin: top-left;
+    transform-origin: top left
 }
 
 .mobile-menu .line2{
@@ -100,5 +100,5 @@ nav{
 
 .mobile-menu .line3 {
     transform: translate(20%, 80%) rotate(-45deg);
-    transform-origin: bottom-left;
+    transform-origin: bottom left;
 }
