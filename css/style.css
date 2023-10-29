@@ -7,8 +7,10 @@ body{
 }
 
 li a{
-    color: 	#5D5F79;
+    /* color: 	#5D5F79; */
+    color: #000038;
     text-decoration: none;
+    font-weight: 400;
 }
 
 li a:hover{
@@ -43,6 +45,7 @@ nav{
     height: 3px;
     background: #00001A;
     margin: 4px;
+    transition: 0.3s;
 }
 
 .attribution {
@@ -74,9 +77,9 @@ nav{
         background: #FFF;
         flex-direction: column;
         padding-top: 100px; 
-        transform: translateX(200%);
+        transform: translateX(100%);
         font-weight: 400;
-        transition: transform 0.5s ease-in-out;
+        transition: transform 0.3s ease-in;
     }
 
     .mobile-menu{
@@ -89,16 +92,16 @@ nav{
     transform: translateX(0);
 }
 
-.mobile-menu .line1{
+.mobile-menu.active .line1{
     transform: translate(20%, -80%) rotate(45deg);
     transform-origin: top left
 }
 
-.mobile-menu .line2{
+.mobile-menu.active .line2{
     opacity: 0;
 }
 
-.mobile-menu .line3 {
+.mobile-menu.active .line3 {
     transform: translate(20%, 80%) rotate(-45deg);
     transform-origin: bottom left;
 }
