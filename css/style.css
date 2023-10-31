@@ -2,8 +2,25 @@
 
 body{
     font-family: 'Inter', sans-serif;
-    font-family: 'Quicksand', sans-serif;
     background-color: #FFF;
+    margin: 64px 140px;
+}
+
+main{
+    margin-top: 55px;
+}
+
+.quebra-cabeça-desktop{
+    height: 250px;
+    display: flex;
+}
+
+.quebra-cabeça-mobile{
+    display: none;
+}
+
+header img{
+    width: 60px;
 }
 
 li a{
@@ -20,9 +37,8 @@ li a:hover{
 
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 64px;
 }
 
 .nav-list{
@@ -58,13 +74,42 @@ nav{
     color: hsl(228, 45%, 44%);
   }
 
+  h1{
+    margin-top: 40px;
+    margin-left: 14px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #000038;
+    letter-spacing: 2px;
+    font-size: 50px;
+    font-weight: 400;
+  }
+
 @media (max-width: 999px) {
     body{
         overflow-x: hidden;
+        margin: auto;
+    }
+
+    header img{
+        width: 50px;
+    }
+
+    .quebra-cabeça-desktop{
+        display: none;
+    }
+
+    .col-1{
+        justify-content: center;
+    }
+
+    .quebra-cabeça-mobile{
+        display: flex;
+        height: 290px;
+        margin: -20px auto;
     }
 
     nav{
-        margin: 32px 16px;
+        margin: 32px 16px 0px;
         justify-content: space-between;
     }
     
