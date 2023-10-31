@@ -24,7 +24,6 @@ header img{
 }
 
 li a{
-    /* color: 	#5D5F79; */
     color: #000038;
     text-decoration: none;
     font-weight: 400;
@@ -75,8 +74,7 @@ nav{
   }
 
   h1{
-    margin-top: 40px;
-    margin-left: 14px;
+    margin-top: 30px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #000038;
     letter-spacing: 2px;
@@ -84,10 +82,30 @@ nav{
     font-weight: 400;
   }
 
+  p{
+    color: #6b6b6b;
+    margin-top: 25px;
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  #readmore{
+    text-align: center;
+    justify-self: left;
+  }
+
+  #readMore{
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #d3d3d3;
+    background-color: #F15E50;
+  }
+
 @media (max-width: 999px) {
     body{
         overflow-x: hidden;
         margin: auto;
+        margin: 0 20px;
     }
 
     header img{
@@ -104,12 +122,12 @@ nav{
 
     .quebra-cabeça-mobile{
         display: flex;
-        height: 290px;
-        margin: -20px auto;
+        width: 100%;
+        margin: 0px auto;
     }
 
     nav{
-        margin: 32px 16px 0px;
+        margin-top: 32px;
         justify-content: space-between;
     }
     
