@@ -218,7 +218,12 @@ footer img{
 
     .col-1{
         justify-content: center;
+        padding: 0;
     }
+
+    .col-1 span{
+        display: block;
+      }
 
     .quebra-cabeça-mobile{
         display: flex;
@@ -266,6 +271,7 @@ footer img{
     footer img{
         width: auto;
         max-height: 100px;
+        padding: 0;
     }
 
     footer span{
