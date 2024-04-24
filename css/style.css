@@ -278,6 +278,10 @@ footer img{
     transition: 1s;
     cursor: pointer;
   }
+
+input {
+    color: black;
+}
   
 
 @media (max-width: 767px) {
